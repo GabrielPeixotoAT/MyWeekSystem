@@ -28,6 +28,14 @@ namespace MyWeekSystem.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
+            ViewData["email"] = "gabr.pxt@gmail.com";
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
